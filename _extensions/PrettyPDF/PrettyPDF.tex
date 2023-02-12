@@ -1,0 +1,76 @@
+% load packages
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{eso-pic}
+\usepackage{fancyhdr}
+\usepackage{sectsty}
+\usepackage{fontspec}
+\usepackage{titlesec}
+
+%% Set page size with a wider right margin
+\geometry{a4paper, total={170mm,257mm}, left=20mm, top=20mm, bottom=20mm, right=50mm}
+
+%% Let's define some colours
+\definecolor{light}{HTML}{E6E6FA}
+\definecolor{highlight}{HTML}{800080}
+\definecolor{dark}{HTML}{330033}
+
+%% Let's add the border on the right hand side 
+\AddToShipoutPicture{% 
+    \AtPageLowerLeft{% 
+        \put(\LenToUnit{\dimexpr\paperwidth-3cm},0){% 
+            \color{light}\rule{3cm}{\LenToUnit\paperheight}%
+          }%
+     }%
+     % logo
+    \AtPageLowerLeft{% start the bar at the bottom right of the page
+        \put(\LenToUnit{\dimexpr\paperwidth-2.25cm},27.2cm){% move it to the top right
+            \color{light}\includegraphics[width=1.5cm]{_extensions/PrettyPDF/logo.png}
+          }%
+     }%
+}
+
+%% Style the page number
+\fancypagestyle{mystyle}{
+  \fancyhf{}
+  \renewcommand\headrulewidth{0pt}
+  \fancyfoot[R]{\thepage}
+  \fancyfootoffset{3.5cm}
+}
+\setlength{\footskip}{20pt}
+
+%% style the chapter/section fonts
+\chapterfont{\color{dark}\fontsize{20}{16.8}\selectfont}
+\sectionfont{\color{dark}\fontsize{20}{16.8}\selectfont}
+\subsectionfont{\color{dark}\fontsize{14}{16.8}\selectfont}
+\titleformat{\subsection}
+  {\sffamily\Large\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
+  
+% left align title
+\makeatletter
+\renewcommand{\maketitle}{\bgroup\setlength{\parindent}{0pt}
+\begin{flushleft}
+  {\sffamily\huge\textbf{\MakeUppercase{\@title}}}
+  \@author
+\end{flushleft}\egroup
+}
+\makeatother
+
+%% Use some custom fonts
+\setsansfont{Ubuntu}[
+    Path=_extensions/PrettyPDF/Ubuntu/,
+    Scale=0.9,
+    Extension = .ttf,
+    UprightFont=*-Regular,
+    BoldFont=*-Bold,
+    ItalicFont=*-Italic,
+    ]
+
+\setmainfont{Ubuntu}[
+    Path=_extensions/PrettyPDF/Ubuntu/,
+    Scale=0.9,
+    Extension = .ttf,
+    UprightFont=*-Regular,
+    BoldFont=*-Bold,
+    ItalicFont=*-Italic,
+    ]
