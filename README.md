@@ -19,7 +19,7 @@ Note that you will need to update the output format to `format: PrettyPDF-pdf` t
 
 ## Changing colours and logo
 
-If you want to update this template to use different a different colour or logo, open up the `_extensions/nrennie/PrettyPDF/PrettyPDF.tex` file after you have installed the extension.
+If you want to update this template to use a different colour or logo, open up the `_extensions/nrennie/PrettyPDF/PrettyPDF.tex` file after you have installed the extension.
 
 ### Logo
 
