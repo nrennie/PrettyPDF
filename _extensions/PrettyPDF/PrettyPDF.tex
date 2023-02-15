@@ -50,7 +50,8 @@
 \makeatletter
 \renewcommand{\maketitle}{\bgroup\setlength{\parindent}{0pt}
 \begin{flushleft}
-  {\sffamily\huge\textbf{\MakeUppercase{\@title}}}
+  {\sffamily\huge\textbf{\MakeUppercase{\@title}}} \vspace{0.3cm} \newline
+  {\Large {\@subtitle}} \newline
   \@author
 \end{flushleft}\egroup
 }
