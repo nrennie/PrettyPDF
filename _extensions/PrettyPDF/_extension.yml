@@ -1,7 +1,10 @@
 title: PrettyPDF
 author: Nicola Rennie
-version: 0.0.1
+version: 0.0.2
 contributes:
+  project:
+    project:
+      type: book
   formats: 
     pdf:
       include-in-header: 
