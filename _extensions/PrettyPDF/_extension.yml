@@ -15,3 +15,16 @@ contributes:
       code-block-bg: light
       linkcolor: highlight
       urlcolor: highlight
+    typst:
+      papersize: a4
+      margin:
+        x: 2cm
+        y: 2cm
+      font-paths: Ubuntu
+      typst-logo: 
+        path: "logo.png"
+      template-partials:
+        - typst-template.typ
+        - typst-show.typ
+      filters:
+        - PrettyPDF.lua
