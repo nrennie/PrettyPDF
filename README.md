@@ -1,6 +1,6 @@
 # PrettyPDF
 
-Quarto extension for a template to generate a PDF with (pretty) LaTeX styling.
+Quarto extension for a template to generate a PDF with (pretty) styling. This extension now allows you to style PDFs using either Typst or LaTeX. Use `PrettyPDF-pdf` as the format if using LaTeX, or `PrettyPDF-typst` if using Typst. The default is `PrettyPDF-pdf`. If using Typst, version 1.4 or greater of Quarto is required.
 
 ## Installation and use
 
@@ -15,11 +15,11 @@ To use the extension in an existing project without installing the template file
 ``` bash
 quarto install extension nrennie/PrettyPDF
 ```
-Note that you will need to update the output format to `format: PrettyPDF-pdf` to enable use of the extension.
+Note that you will need to update the output format to `format: PrettyPDF-pdf` or `format: PrettyPDF-typst` to enable use of the extension.
 
-## Changing colours and logo
+## Adjusting LaTeX Styling
 
-If you want to update this template to use a different colour or logo, open up the `_extensions/nrennie/PrettyPDF/PrettyPDF.tex` file after you have installed the extension.
+If you want to update the LaTeX version of this template to use a different colour or logo, open up the `_extensions/nrennie/PrettyPDF/PrettyPDF.tex` file after you have installed the extension.
 
 ### Logo
 
