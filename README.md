@@ -15,7 +15,13 @@ To use the extension in an existing project without installing the template file
 ``` bash
 quarto install extension nrennie/PrettyPDF
 ```
-Note that you will need to update the output format to `format: PrettyPDF-pdf` or `format: PrettyPDF-typst` to enable use of the extension.
+Note that you will need to update the output format to `format: PrettyPDF-pdf` or `format: PrettyPDF-typst` to enable use of the extension. For book projects, add:
+
+```
+project:
+  type: PrettyPDF
+```
+to the `_quarto.yml` file.
 
 ## Adjusting LaTeX Styling
 
