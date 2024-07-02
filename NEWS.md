@@ -1,3 +1,7 @@
+# PrettyPDF 0.0.4 _2024-06-23_
+
+- Remove subtitle reference
+
 # PrettyPDF 0.0.3 _2024-02-01_
 
 - Add `typst` format
