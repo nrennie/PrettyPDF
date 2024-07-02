@@ -4,3 +4,5 @@
 .Ruserdata
 nul
 *.Rproj
+template.log
+template.tex

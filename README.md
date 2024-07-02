@@ -1,6 +1,6 @@
 # PrettyPDF
 
-Quarto extension for a template to generate a PDF with (pretty) styling. This extension now allows you to style PDFs using either Typst or LaTeX. Use `PrettyPDF-pdf` as the format if using LaTeX, or `PrettyPDF-typst` if using Typst. The default is `PrettyPDF-pdf`. If using Typst, version 1.4 or greater of Quarto is required.
+Quarto extension for a template to generate a PDF with (pretty) styling using LaTeX. Use `PrettyPDF-pdf` as the format if using LaTeX.
 
 ## Installation and use
 
@@ -15,7 +15,7 @@ To use the extension in an existing project without installing the template file
 ``` bash
 quarto install extension nrennie/PrettyPDF
 ```
-Note that you will need to update the output format to `format: PrettyPDF-pdf` or `format: PrettyPDF-typst` to enable use of the extension. For book projects, add:
+Note that you will need to update the output format to `format: PrettyPDF-pdf` to enable use of the extension. For book projects, add:
 
 ```
 project:
@@ -38,8 +38,4 @@ Lines 14-16 define three colours used in the template: `light`, `dark`, and `hig
 ## Blog
 
 Read more about this extension, how it was built, and how to make your own in my blog post at [nrennie.rbind.io/blog/making-pretty-pdf-quarto](https://nrennie.rbind.io/blog/making-pretty-pdf-quarto/).
-
-
-
-
 
